@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>apptwo - Test App</title>
+
+<!-- Styles -->
+<link href="/style.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+<![endif]-->
+
+<!-- Favicons
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+                               <link rel="shortcut icon" href="./assets/ico/favicon.png">
+ -->
+  </head>
+  
+  <body>
+    <a class="sr-only" href="#content">Skip navigation</a>
+
+    <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">apptwo</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="https://github.com/skw/apptwo">Source</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Page content of course! -->
+    <main class="main" id="content" role="main">
+      <div class="container">
+        <ul class="nav nav-tabs" id="t_nav">
+          <li><a href="#home" data-toggle="tab">Home</a></li>
+        </ul>
+        
+        <div class="tab-content" id="t_content">
+          <div class="tab-pane active" id="home">
+            
+            <div class="row">
+              <!-- left col -->
+              <div class="col-md-6 search">
+                <h1>New search</h1>
+                <form action="javascript:void(0);" class="form-horizontal" role="form">
+                  <div class="form-group title">
+                    <label for="inputTitle" class="col-lg-2 control-label">Title</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="inputTitle" placeholder="Your title here...">
+                      <div class="alerts">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group keywords">
+                    <label for="inputKeywords" class="col-lg-2 control-label">Search Keywords</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="inputKeywords" placeholder="ie. canucks hockey">
+                      <div class="alerts">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-offset-2 col-lg-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" id="refresh"> Automatically refresh in background
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-offset-2 col-lg-10">
+                      <button type="submit" class="btn btn-default" id="search">Search</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- right col -->
+              <div class="col-md-6 saved">
+                <h1>Search History</h1>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Keywords</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+            <div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    
+    <div id="footer">
+      <footer class="container" role="contentinfo">
+        Sample youtube/backbone app.
+      </footer>
+    </div>
+
+<!-- Assets -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/1.3.1/lodash.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/hogan.js/2.0.0/hogan.js"></script>
+
+<!-- App -->
+<script src="/app.js"></script>
+
+  </body>
+</html>
